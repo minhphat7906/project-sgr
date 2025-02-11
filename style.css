@@ -6,8 +6,6 @@
 }
 body{
     color: black;
-    width: 100%;
-    height: 100%;
 }
 .header{
     display: flex;
@@ -22,6 +20,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     height: 90px;
+    width: 100%;
 }
 .lauchpage{
     color: red;
@@ -78,14 +77,12 @@ font-size: 40px;
 .first{
     position: relative;
     margin-top: 130px;
-    width: 100%;
     height: 830px;
     background: url('https://demo.epic-webdesign.com/tf-launchpage/v1/images/bg0.jpg') top center no-repeat;
     background-size:cover;
 }
 .first img{
     background: #000;
-    width: 100%;
     height: 830px;
 }
 .background-home{
@@ -245,7 +242,6 @@ font-size: 40px;
     transition: 0.5s;
 }
 .d{
-  width: 100%;
   height: 500px;
   background: #f1faff;
   padding-top: 90px;
@@ -329,7 +325,6 @@ font-size: 40px;
 
 .about-discover {
   position: static;
-  width: 100%;
   height: 400px;
   padding: 180px 0;
   background-color: white;
@@ -387,7 +382,6 @@ font-size: 40px;
   .about-cusonimprove {
     margin-top: 0px;
     background-color: rgb(242, 247, 252);
-    width: 100%;
     height: 570px;
     color: #071e55;
   }
@@ -504,7 +498,6 @@ font-size: 40px;
 
 /* funfact */
  .about-funfact {
-  width: 100%;
   height: 550px;
   background-color: #e52f37; 
   opacity: 0.95;
@@ -534,7 +527,6 @@ font-size: 40px;
   font-size: 18px;
 }
 .whatppsay{
-  width: 100%;
   height: 800px;
   background: #f1faff;
   display: flex;
@@ -577,7 +569,6 @@ width: 600px;
 height: 600px;
 }
 .card-header {
-  width: 100%;
   height: 100px;
   padding: 15px 25px;
   margin-bottom: 25px;
@@ -600,7 +591,6 @@ height: 600px;
     border-radius: 50%;
 }
 .work-container {
-  width: 100%;
   height: 1000px;
   position: relative;
   text-align: center;
@@ -724,7 +714,6 @@ margin-bottom: 20px;
   gap: 50px;
 }
 .Award-Winning{
-  width: 100%;
   height: 580px;
   background-color: #e52f37;
   color: #fff;
@@ -775,7 +764,6 @@ text-align: center;
   justify-content: center;
   }
 .Amazing{
-width: 100%;
 height: 800px;
 display: flex;
 flex-direction: column;
@@ -817,7 +805,6 @@ margin-top: 30px;
   margin-top: 10px;
 }
 .Great-pricing-plans{
-  width: 100%;
   height: 800px;
   background: #f1faff;
   padding: 90px 0 100px 0;
@@ -942,7 +929,6 @@ color:#fff ;
   display: none;
 }
 .Frequently{
-  width: 100%;
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -979,3 +965,94 @@ font-size: 30px;
 }
 .Frequently h2{
   font-size: 45px;}
+.contact{
+  height: 850px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contact h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.contact p{
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+#text-contact2{
+  width: 459px; 
+  height: 59px;
+  padding: 10px; 
+  background-color: red; 
+  border: 3px solid #fff; 
+  border-radius: 5px; 
+  color: #fff; 
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+#text-contact2::placeholder{
+  color: #fff;
+  font-size: 20px;
+}
+.select-contact{
+  width: 484px; 
+  height: 80px;
+  padding: 10px; 
+  background-color: red; 
+  border: 3px solid #fff; 
+  border-radius: 5px; 
+  color: #fff; 
+}
+.select-contact option{
+  color: #fff;
+  font-size: 20px;
+}
+#text-contact3{
+  width: 980px; 
+  height: 190px;
+  padding: 10px; 
+  background-color: red; 
+  border: 3px solid #fff; 
+  border-radius: 5px; 
+  color: #fff; 
+  margin-right: 30px;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 20px;  
+  padding-top: 0px;  
+  padding-bottom: 0px;
+}
+#text-contact3::placeholder{
+  color: #fff;
+  font-size: 20px;
+
+}
+.getit{
+  width: 350px;
+  height: 70px;
+  background-color: #fff;
+  color: red;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end{
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon-end{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap : 20px;
+  font-size: 30px;
+}
