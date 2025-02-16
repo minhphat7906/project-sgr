@@ -2,80 +2,115 @@
     font-family: 'Nunito' , sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
-body{
-    color: black;
+body {
+  color: black;
+  width: 100%;
 }
-.header{
-    display: flex;
-    background-color: white;
-    position: fixed;
-    top:0;
-    right: 0;
-    left: 0;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 90px;
-    width: 100%;
+.header {
+  display: flex;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 120px;
+  padding-bottom: 20px;
+  padding-right: 16px;
+  height: 75px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
-.lauchpage{
-    color: red;
-font-size: 40px;
+.container {
+  width: 100%;
+  height: 52px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  
 }
-.tt span{
-    height: 28px;
-    font-size: 20px;
-    padding: 10px 15px;
+.launchpage {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #e52f37;
+  transform: translate(200px);
+}
+.tt {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.tt span {
+  height: 28px;
+  font-size: 23px;
+  padding: 10px 15px;
+}
+.gt {
+  background-color: red;
+  border-radius: 23px 23px;
+  color: white;
+  border: 1px red solid;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+.bar {
+  display: none;
+  width: 52px;
+  height: 36px;
+  border-radius: 5%;
+  background-color: white;
+}
+.tt7:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt6:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt5:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt4:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt3:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt2:hover {
+  color: red;
+  transition: 0.5s;
+}
+.tt1:hover {
+  color: red;
+  transition: 0.5s;
+}
+.gt:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  transition: 0.5s;
+}
 
-}
-.gt{
-    width: 127px;
-    height: 49px;
-    background-color: red;
-    border-radius: 23px 23px;
-    color: white;
-    border: 1px red solid;
-}
-.tt7:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt6:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt5:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt4:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt3:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt2:hover{
-    color: red;
-    transition: 0.5s;
-}
-.tt1:hover{
-    color: red;
-    transition: 0.5s;
-}
-.gt:hover{
-    border: 1px solid red;
-    background-color: white;
-    color: red;
-    transition: 0.5s;
-}
 .first{
-    position: relative;
+  position: relative;
     margin-top: 130px;
     height: 830px;
     background: url('https://demo.epic-webdesign.com/tf-launchpage/v1/images/bg0.jpg') top center no-repeat;
@@ -88,10 +123,9 @@ font-size: 40px;
 .background-home{
     position: absolute;
     top: 50px;
-    left: 400px;
+    left: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 .a{
     font-size: 25px;
@@ -214,7 +248,7 @@ font-size: 40px;
     color: #7c8595;
   }
   .second{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     height: 100px;
@@ -225,8 +259,13 @@ font-size: 40px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-}
+}  
+.item-c{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
 .c img{
     width: auto;
     height: 55px; 
@@ -283,6 +322,9 @@ font-size: 40px;
     font-size: 25px;
     color: #000;
 }
+.item p{
+  text-align: center;
+}
 .item .d2 i{
     display: flex;
     justify-content: center;
@@ -325,33 +367,36 @@ font-size: 40px;
 
 .about-discover {
   position: static;
-  height: 400px;
-  padding: 180px 0;
+  height: 650px;
+  padding: 100px 0;
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  }
+  flex-wrap: nowrap;
+}
+
   .about-picdiscover {
     position: relative;
-    width: 495px;
-    height: 393px;
-    border-radius: 5px;
+    width: 600px;
+    height: 450px;
+    border-radius: 5%;
+    margin-left: 200px;
   }
   .about-textdiscover {
     padding: 15px 50px;
-    width: 590px;
-    height: 382px;
+    width: 650px;
+    height: 450px;
+    margin-left: 50px;
+    
   }
   .about-titlediscover {
     color: #071e55;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 1.2;
     margin-bottom: 20px;
   }
   .about-textindis {
     color: rgb(124, 133, 149);
-    font-size: 17px;
+    font-size: 22px;
     line-height: 28px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -564,6 +609,10 @@ font-size: 40px;
 .Feefo{
   width: 200px;
 }
+.item-what{
+  display: flex;
+  flex-direction: row;
+}
 .what2{
 width: 600px;
 height: 600px;
@@ -649,13 +698,12 @@ height: 600px;
 }
 .meetourteam{
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background: #f1faff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 90px 0px 100px;
 }
 .mot{
   line-height: 28px;
@@ -677,7 +725,6 @@ margin-bottom: 20px;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  justify-content: flex-start;
 }
 .textmot1 img{
   width: 400px;
@@ -693,8 +740,8 @@ margin-bottom: 20px;
   font-weight: 400;
   color: #acacac;
   font-style: italic;
-  border-bottom: solid 5px red;
-  width: 300px;
+  border-bottom: solid 3px red;
+  
 }
 .textmot1 p{
   font-size: 27px;
@@ -712,6 +759,7 @@ margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   gap: 50px;
+  height: auto;
 }
 .Award-Winning{
   height: 580px;
@@ -764,7 +812,7 @@ text-align: center;
   justify-content: center;
   }
 .Amazing{
-height: 800px;
+height: 1000px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -782,7 +830,7 @@ margin-bottom: 30px;
   margin-bottom: 30px;
 }
 .content-amazing1{
-  height: 200px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   font-size: 23px;
@@ -803,6 +851,8 @@ margin-top: 30px;
 .text-amazing p{
   color: #7c8595;
   margin-top: 10px;
+  height: 250px;
+  width: 320px;
 }
 .Great-pricing-plans{
   height: 800px;
@@ -812,7 +862,7 @@ margin-top: 30px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 .text-Great{
   width: 430px;
@@ -902,10 +952,15 @@ color:#fff ;
   margin-left: 60px;
  
 }
-
+.item-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .gt-great2 h2{
   width: 150px;
-  height: 35px;
+  height: 60px;
   color: red;
   font-size: 22px;
   background: #fff;
@@ -932,7 +987,7 @@ color:#fff ;
   height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 120px 0 140px 0;
   align-items: center;
 }
 .item-FAQ{
@@ -957,7 +1012,7 @@ color:#fff ;
   font-weight: 400;
   color: #7c8595;
   font-family: "Roboto", serif;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 .Frequently h3{
